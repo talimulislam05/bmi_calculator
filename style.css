@@ -68,3 +68,9 @@ button {
   color: transparent;
   background-clip: text;
 }
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 90%;
+  }
+}
