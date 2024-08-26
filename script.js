@@ -10,12 +10,15 @@ calculate.addEventListener('click', function () {
   let squareMeter = meter ** 2;
   let bmi = (weight.value / squareMeter).toFixed(2);
   result.textContent = ` Your BMI is ${bmi}`;
-  if (bmi < 18) {
-    category.textContent = `You'r Under weight 😔`;
-  } else if (bmi > 18 && bmi < 24) {
-    category.textContent = ` Your BMI is Normal 😍`;
-  } else if (bmi > 24 && bmi < 30) {
-    category.textContent = `You'r over Weight!`;
+  if (weight.value === '' && height.value === '') {
+    category.textContent = '';
+    result.textContent = `⛔ Provide weight & height`;
+  } else if (bmi < 18.5) {
+    category.textContent = `You'r underweight 😔`;
+  } else if (bmi >= 18.5 && bmi <= 24.99) {
+    category.textContent = `Your BMI is normal 😍`;
+  } else if (bmi > 25 && bmi < 29.99) {
+    category.textContent = `You'r over Weight! 😓`;
   } else if (bmi > 30) {
     category.textContent = `You'r Obese! 😔`;
   }
