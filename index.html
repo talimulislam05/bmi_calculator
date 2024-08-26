@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>BMI Calculator by <span class="cool-effect">Talimul Islam</span></h2>
+      <form action="#">
+        <div>
+          <label for="height">Height (Feet):</label>
+          <input type="text" id="height" placeholder="Enter your height" />
+        </div>
+        <div>
+          <label for="weight">Weight (kg):</label>
+          <input type="text" id="weight" placeholder="Enter your weight" />
+        </div>
+        <div class="btns">
+          <button id="reset">Reset</button>
+          <button id="calculate">Calculate</button>
+        </div>
+        <h3 id="result"></h3>
+        <div class="center">
+          <p id="category"></p>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
