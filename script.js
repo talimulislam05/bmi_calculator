@@ -10,7 +10,7 @@ calculate.addEventListener('click', function () {
   let squareMeter = meter ** 2;
   let bmi = (weight.value / squareMeter).toFixed(2);
   result.textContent = ` Your BMI is ${bmi}`;
-  if (weight.value === '' && height.value === '') {
+  if (weight.value === '' || height.value === '') {
     category.textContent = '';
     result.textContent = `⛔ Provide height & weight`;
   } else if (bmi < 18.5) {
