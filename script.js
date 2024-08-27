@@ -14,13 +14,13 @@ calculate.addEventListener('click', function () {
     category.textContent = '';
     result.textContent = `⛔ Provide height & weight`;
   } else if (bmi < 18.5) {
-    category.textContent = `You'r underweight 😔`;
+    category.textContent = `You're underweight 😔`;
   } else if (bmi >= 18.5 && bmi <= 24.99) {
     category.textContent = `Your BMI is normal 😍`;
   } else if (bmi > 25 && bmi < 29.99) {
-    category.textContent = `You'r over Weight! 😓`;
+    category.textContent = `You're over Weight! 😓`;
   } else if (bmi > 30) {
-    category.textContent = `You'r Obese! 😔`;
+    category.textContent = `You're Obese! 😔`;
   }
 });
 reset.addEventListener('click', function () {
