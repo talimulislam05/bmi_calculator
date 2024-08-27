@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 .container {
   background-color: antiquewhite;
@@ -59,11 +63,13 @@ button {
   text-align: center;
 }
 .cool-effect {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
   background: linear-gradient(
     90deg,
     rgb(52, 41, 247) 0%,
     rgb(21, 21, 190) 35%,
-    rgb(65, 139, 218) 100%
+    rgb(20, 78, 141) 100%
   );
   color: transparent;
   background-clip: text;
